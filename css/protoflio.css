@@ -122,8 +122,17 @@ h1:hover {
   a {
     padding: 10px;
   }
-  h1{
+  h1 {
     bottom: 7.5%;
-
+    font-size: small;
+    font-weight: bold;
+    height: 19px;
+    width: 23px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+  }
+  a {
+    font-size: small;
+    font-weight: 100;
   }
 }
