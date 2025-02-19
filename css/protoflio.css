@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  background-color: rgb(228, 228, 228);
+  margin: 80px auto;
+  position: relative;
+}
+img {
+  width: 130px;
+  height: fit-content;
+  position: absolute;
+  top: 10.5%;
+}
+.box {
+  width: 80%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 70px;
+  text-align: center;
+  border-radius: 6px;
+}
+h2 {
+  margin-top: 6%;
+  margin-bottom: 4px;
+  font-size: xx-large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: #6c63ff;
+}
+p {
+  opacity: 0.6;
+  margin-bottom: 4px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+hr {
+  width: 84%;
+  margin-left: 8%;
+  margin-bottom: 20px;
+}
+a {
+  display: flex;
+  text-decoration: none;
+  background-color: rgba(238, 238, 238, 0.877);
+  /* border: 0.4px solid teal; */
+  text-align: initial;
+  margin-left: 8%;
+  width: 84%;
+  margin-bottom: 4px;
+  padding: 20px;
+  border-radius: 6px;
+  justify-content: space-between;
+  color: #6c63ff;
+  transition: background-color 0.3s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a:hover {
+  background-color: #6c63ff;
+  color: azure;
+}
+h1 {
+  position: absolute;
+  bottom: 12%;
+  right: 13%;
+  background-color: #6c63ff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aliceblue;
+  width: 36px;
+  height: 30px;
+  font-size: large;
+  letter-spacing: 0px;
+  border-radius: 4px;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: all 1s 0.2s;
+  animation-name: A;
+  animation-duration: 2.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+h1:hover {
+  animation-play-state: paused;
+  background-color: #4c43ff;
+  color: white;
+}
+@keyframes A {
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 430px) {
+  .container {
+    width: 360px;
+    height: 500px;
+    margin: 150px auto;
+  }
+  img {
+    top: 73px;
+    width: 20%;
+    height: auto;
+  }
+  .box {
+    width: 80%;
+    height: 320px;
+  }
+  a {
+    padding: 10px;
+  }
+  h1{
+    bottom: 7.5%;
+
+  }
+}
